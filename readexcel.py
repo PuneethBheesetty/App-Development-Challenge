@@ -1,10 +1,5 @@
-#https://openpyxl.readthedocs.io/en/stable/tutorial.html
-from openpyxl import Workbook
-wb = Workbook;
-ws = wb.active;					#get the active worksheet
-for row in ws.rows:			#select one row at a time
-	latitude = row[0];
-	longitude = row[1];
-	height = row[2];
-	slope = row[3];
-	
+#https://docs.python.org/3/library/csv.html
+import csv
+with open ("fy20_adc_data_file_88_degrees.csv", newline="") as csvfile:
+	for row in cvs.reader(csvfile, delimiter=","):
+		print row;
