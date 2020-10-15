@@ -7,4 +7,4 @@ with open ("fy20_adc_data_file_88_degrees.csv", newline="") as lunar_data:
 		longitude = row[1];
 		height = row[2];
 		slope = row[3];
-		bpy.ops.mesh.primitive_sphere_add(location=[latitude, longitude, height]);
+		bpy.ops.mesh.primitive_sphere_add(location=(latitude, longitude, height));
